@@ -1,0 +1,7 @@
+mktorrent for Debian
+--------------------
+
+No explicit support for multibyte characters or UTF-8. Reads and writes
+file names and comments exactly as reported by the OS.
+
+ -- Nico Golde <nion@debian.org>  Tue, 25 Aug 2009 22:43:14 +0200

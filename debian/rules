@@ -1,4 +1,19 @@
 #!/usr/bin/make -f
 
+# https://wiki.debian.org/HardeningWalkthrough
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# Build and installation options
+export USE_PTHREADS = 1
+export PREFIX = /usr
+export USE_OPENSSL = 1
+export USE_LARGE_FILES = 1
+export USE_LONG_OPTIONS = 1
+
 %:
 	dh $@
+
+override_dh_auto_build:
+	# The Makefile supports CFLAGS, but not CPPFLAGS, let's append them.
+	# https://wiki.debian.org/HardeningWalkthrough#Handwritten_Makefiles
+	CFLAGS="$$CFLAGS $$CPPFLAGS" dh_auto_build

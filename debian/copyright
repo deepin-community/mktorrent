@@ -1,22 +1,78 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Upstream-Name: mktorrent
+Upstream-Contact: Barnabás Pőcze <pobrn@protonmail.com>
+Source: https://github.com/pobrn/mktorrent
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
+Copyright:
+ 2009-2017, Emil Renner Berthing <esmil@mailme.dk>
+License: GPL-2+ with OpenSSL exception
+
+Files: sha1.?
+Copyright: None (public domain)
+License: public-domain
+ From the header comment of sha1.c:
+ .
+ --------------------------------------
+ SHA-1 in C
+ By Steve Reid <sreid@sea-to-sky.net>
+ 100% Public Domain
+ .
+ Modifications by
+ James H. Brown <jbrown@burgoyne.com>
+ Saul Kravitz <Saul.Kravitz@celera.com>
+ Ralph Giles <giles@artofcode.com>
+ Emil Renner Berthing <esmil@mailme.dk>
+ Still 100% Public Domain
+ --------------------------------------
+Comment:
+ The licensing status of the sha1 implementation by Steve Reid is well
+ established. The code is present in several copies in the Debian archive.
+
+Files: debian/*
+Copyright:
+ 2009-2018, Nico Golde <nion@debian.org>
+ 2018-2022, Paride Legovini <paride@debian.org>
 License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+
+License: GPL-2+ with OpenSSL exception
+ This package is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
  .
  This package is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ You should have received a copy of the GNU General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ In addition:
+ Permission is granted to link the code in this release with the
+ OpenSSL project's 'OpenSSL' library and to distribute the linked
+ executables.  Works derived from mktorrent may, at their authors'
+ discretion, keep or delete this exception.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.

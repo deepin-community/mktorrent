@@ -1,5 +1,69 @@
-template-repository (1.0-1) unstable; urgency=medium
+mktorrent (1.1-3) unstable; urgency=medium
 
-  * Initial release
+  * d/control: bump Standards-Version to 4.6.1
+  * d/control: bump dh compat level to 13
+  * d/copyright: update copyright years for debian/*
+  * d/gbp.conf: switch to DEP-14 branch names
+  * debian/*: update upstream maintainer and location
+  * debian/*: new email address for Paride: paride@debian.org
+  * debian/*: wrap-and-sort -bast (cosmetic)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Paride Legovini <paride@debian.org>  Wed, 01 Jun 2022 09:09:52 +0000
+
+mktorrent (1.1-2) unstable; urgency=medium
+
+  * Manpage overhaul (closes: #951838)
+  * d/copyright: add the copyright information for sha1.c and sha1.h
+  * Bump Standards-Version to 4.5.0
+  * Replace d/compat with a Build-Dep on debhelper-compat (= 12)
+  * d/control: add Rules-Requires-Root: no
+  * Add upstream metadata file
+
+ -- Paride Legovini <pl@ninthfloor.org>  Wed, 04 Mar 2020 14:39:33 +0000
+
+mktorrent (1.1-1) unstable; urgency=medium
+
+  * New upstream version.
+    Closes: #852159, closes: #699485, closes: #765935.
+  * Set myself (Paride Legovini) as maintainer (Closes: #903256)
+  * Improved description (Closes: #699488). Thanks: Ivan Shmakov.
+  * Bump Standards-Version to 4.2.0. Changes:
+    - Priority: extra replaced by Priority: optional
+  * d/copyright converted to the DEP5 machine-readable format
+  * Bump compat level to 11 (no changes needed)
+  * Hardened build (hardening=+all)
+  * Mark package as Multi-Arch: foreign
+  * The sf.net project is gone, mktorrent is now hosted on GitHub.
+    - d/control: use the GitHub project page as Homepage
+    - d/watch: retrieve the upstream versions from GitHub (mode=git)
+  * d/control: added the Vcs- fields, packaging hosted on salsa
+  * Add d/gbp.conf (DEP14)
+  * gbp.conf: pristine-tar{,-commit} = True
+
+ -- Paride Legovini <pl@ninthfloor.org>  Wed, 22 Aug 2018 12:06:55 +0000
+
+mktorrent (1.0-4) unstable; urgency=low
+
+  * Fix spelling in long description (Closes: #636637).
+  * Bump policy version, no changes required.
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Nico Golde <nion@debian.org>  Sun, 17 Jun 2012 14:22:03 +0200
+
+mktorrent (1.0-3) unstable; urgency=low
+
+  * Fix typo in compile flags that broke large file support (Closes: #556423).
+
+ -- Nico Golde <nion@debian.org>  Mon, 16 Nov 2009 00:57:51 +0100
+
+mktorrent (1.0-2) unstable; urgency=low
+
+  * Enable building with large file support.
+
+ -- Nico Golde <nion@debian.org>  Fri, 06 Nov 2009 17:47:59 +0100
+
+mktorrent (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #542839).
+
+ -- Nico Golde <nion@debian.org>  Tue, 25 Aug 2009 22:43:14 +0200
