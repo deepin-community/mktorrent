@@ -1,0 +1,68 @@
+.TH MKTORRENT "1" "September 2018" "mktorrent 1.1" "User Commands"
+.SH NAME
+mktorrent \- simple BitTorrent metainfo file creator
+.SH SYNOPSIS
+.B mktorrent
+[\fI\,OPTIONS\/\fR] \fI\,<target directory or filename>\/\fR
+.SH DESCRIPTION
+mktorrent is a command line utility to create BitTorrent metainfo files
+used by trackers and torrent clients. It can create metainfo files for
+single files or complete directories in a fast way.
+.SH OPTIONS
+.TP
+\fB\-a\fR, \fB\-\-announce=\fR<url>[,<url>...]
+Specify the full announce URLs.
+Additional \fB\-a\fR adds backup trackers.
+.TP
+\fB\-c\fR, \fB\-\-comment=\fR<comment>
+Add a comment to the metainfo.
+.TP
+\fB\-d\fR, \fB\-\-no\-date\fR
+Don't write the creation date.
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Show this help screen.
+.TP
+\fB\-l\fR, \fB\-\-piece\-length=\fR<n>
+Set the piece length to 2^n bytes.
+Default is 18, that is 2^18 = 256kB.
+.TP
+\fB\-n\fR, \fB\-\-name=\fR<name>
+Set the name of the torrent.
+Default is the basename of the target.
+.TP
+\fB\-o\fR, \fB\-\-output=\fR<filename>
+Set the path and filename of the created file.
+Default is <name>.torrent.
+.TP
+\fB\-p\fR, \fB\-\-private\fR
+Set the private flag.
+.TP
+\fB\-s\fR, \fB\-\-source=\fR<source>
+Add source string embedded in infohash.
+.TP
+\fB\-t\fR, \fB\-\-threads=\fR<n>
+Use <n> threads for calculating hashes.
+Default is the number of CPU cores.
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Be verbose.
+.TP
+\fB\-w\fR, \fB\-\-web\-seed=\fR<url>[,<url>...]
+Add web seed URLs.
+Additional \fB\-w\fR adds more URLs.
+.SH "AUTHORS"
+Originally written by Emil Renner Berthing <esmil@mailme.dk>.
+.PP
+This manpage was written for the Debian mktorrent package by
+Paride Legovini <paride@debian.org> and Nico Golde <nion@debian.org>.
+.SH "REPORTING BUGS"
+Please use the GitHub issue tracker <https://github.com/pobrn/mktorrent/issues>.
+.SH "COPYRIGHT"
+.PP
+This program is Free Software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation; either version 2, or (at your option) any
+later version.
+.SH "SEE ALSO"
+More documentation at: <https://github.com/pobrn/mktorrent/wiki>.
